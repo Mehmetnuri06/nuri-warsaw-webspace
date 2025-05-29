@@ -1,6 +1,7 @@
 
 import { MapPin, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -37,6 +38,11 @@ const Hero = () => {
             <Github className="w-5 h-5 mr-2" />
             View Projects
           </Button>
+          <Link to="/friends">
+            <Button variant="outline" size="lg" className="border-green-600 text-green-600 hover:bg-green-50 transition-all duration-300 transform hover:scale-105">
+              For Friends
+            </Button>
+          </Link>
         </div>
         
         <div className="flex justify-center space-x-6 animate-fade-in">
